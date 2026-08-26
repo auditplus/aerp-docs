@@ -1,0 +1,7 @@
+---- Git Commands ----
+
+Git add ---- git add .
+
+Git commit ---- git commit -m "message"
+
+Git push ----- git push origin [branchName]
