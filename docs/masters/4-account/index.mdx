@@ -1,0 +1,61 @@
+---
+title: 4. Account
+sidebar_position: 4
+---
+
+## Select Account From Menu
+
+type `acc` in menu box, it lists menus that are startswith `acc`. press down arrow and select `Account`.
+
+![Account Menu](./1-account-from-menu.png)
+
+## New Account
+
+![New Account](./2-new-account-1.png)
+
+Required Fields,
+  * Name - Account name
+  * Type - Account type, ex: Sundry Creditor / Sundry Deptor / ..
+
+Optional Fields,
+  * Alias Name - Alias name for account.
+
+- `Enable Gst Detail` will be visible for account type ["EFT_ACCOUNT", "DIRECT_EXPENSE", 
+"INDIRECT_EXPENSE","FIXED_ASSET","DIRECT_INCOME","INDIRECT_INCOME","SALE",
+"PURCHASE","DUTIES_AND_TAXES","SUNDRY_CREDITOR","SUNDRY_DEBTOR"]
+
+![Enable Gst Detail](./enable-gst-detail.png)
+
+- `Enable Tds Detail` will be visible for account type ["DIRECT_EXPENSE","INDIRECT_EXPENSE",
+  "DIRECT_INCOME","INDIRECT_INCOME","SALE","PURCHASE","SUNDRY_CREDITOR","SUNDRY_DEBTOR"]
+
+![Income Expense Account Type](./enable-tds-detail.png)
+
+- `Enable Contact Detail` will be visible for account type ["SUNDRY_CREDITOR","SUNDRY_DEBTOR"]
+
+![Sundry Account Type](./enable-contact-detail.png)
+
+- `Location` in Tax Details will be visible for registration type ["REGULAR","COMPOSITE","SPECIAL_ECONOMIC_ZONE","UNREGISTERED"]
+
+![Tax Details with Location](./tax-details-with-location.png)
+
+- `GSTIN` in Tax Details will be visible for registration type ["REGULAR","COMPOSITE","SPECIAL_ECONOMIC_ZONE"]
+
+![Tax Details with GSTIN](./tax-details-with-gstin.png)
+
+- `GSTIN` & `Location` in Tax Details will not be visible for registration type ["IMPORT_EXPORT"]
+
+![Tax Details without GSTIN & Location](./tax-details-without-location-gstin.png)
+
+- Refer: [Default Account Types Details](../account-type#default-account-types-details)
+
+
+## Account List
+
+![Account List](./account-list.png)
+
+## Edit Account
+
+{/* ![Edit Account](./3-edit-member.png) */}
+
+

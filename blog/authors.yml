@@ -1,0 +1,47 @@
+hchockarprasad:
+  name: H. Chockar Prasad
+  title: Chief Technical Officer, Co-founder Auditplus Technologies
+  url: https://linkedin.com/in/hchockarprasad
+  image_url: https://www.auditplus.io/images/team/hchockarprasad-author.jpg
+  page: true
+  socials:
+    linkedin: hchockarprasad
+    github: hchockarprasad
+    profile: https://www.auditplus.io/profile/hchockarprasad
+
+antonyjudes:
+  name: S. Antony Judes
+  title: Team Head, Auditplus Technologies
+  url: https://linkedin.com/in/leefordjudes
+  image_url: https://www.auditplus.io/images/team/antonyjudes-author.jpg
+  page: true
+  socials:
+    linkedin: leefordjudes
+    github: leefordjudes
+    profile: https://www.auditplus.io/profile/antonyjudes
+
+yangshun:
+  name: Yangshun Tay
+  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
+  url: https://linkedin.com/in/yangshun
+  image_url: https://github.com/yangshun.png
+  page: true
+  socials:
+    x: yangshunz
+    linkedin: yangshun
+    github: yangshun
+    newsletter: https://www.greatfrontend.com
+
+slorber:
+  name: Sébastien Lorber
+  title: Docusaurus maintainer
+  url: https://sebastienlorber.com
+  image_url: https://github.com/slorber.png
+  page:
+    # customize the url of the author page at /blog/authors/<permalink>
+    permalink: '/all-sebastien-lorber-articles'
+  socials:
+    x: sebastienlorber
+    linkedin: sebastienlorber
+    github: slorber
+    newsletter: https://thisweekinreact.com

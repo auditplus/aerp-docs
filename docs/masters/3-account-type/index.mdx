@@ -1,0 +1,75 @@
+---
+title: 3. Account Type
+sidebar_position: 3
+---
+
+## New Account Type
+
+![New Account Type](./new-acc-type.png)
+
+Required Fields
+  * Name - Account name
+  * Parent Type - Parent Account type 
+
+Optional Fields
+  * Description
+
+To Create new account type, you need to know some details about [Default Account Types Details](#default-account-types-details),<br/>
+ you can create new account type under account type which are having true in AllowSubType.
+
+![New Account Type](./new-acc-type-filled-1.png)
+![New Account Type](./new-acc-type-filled-2.png)
+
+You can only create account type under Account Type which have 'Allow Sub Type' is `true`. See below for [details](#default-account-types-details).
+
+## Default Account Types
+
+|![acctype1](./acc-type-1.png)|![acctype2](./acc-type-2.png)|![acctype3](./acc-type-3.png)|![acctype4](./acc-type-4.png)|
+|-|-|-|-|
+
+## Default Account Types Details
+
+| Account Type Name      | Default Name            | Base Types                                            | Allow Account | Allow Sub Type |Parent Type|
+| :--------------------- | :---------------------- | :---------------------------------------------------- | :------------ | :------------- |:----------|
+| Current Asset          | CURRENT\_ASSET          | CURRENT\_ASSET                                        | true          | true           ||
+| Current Liability      | CURRENT\_LIABILITY      | CURRENT\_LIABILITY                                    | true          | true           ||
+| Direct Income          | DIRECT\_INCOME          | DIRECT\_INCOME                                        | true          | true           ||
+| Indirect Income        | INDIRECT\_INCOME        | INDIRECT\_INCOME                                      | true          | true           ||
+| Sale                   | SALE                    | SALE                                                  | true          | false          ||
+| Direct Expense         | DIRECT\_EXPENSE         | DIRECT\_EXPENSE                                       | true          | true           ||
+| Indirect Expense       | INDIRECT\_EXPENSE       | INDIRECT\_EXPENSE                                     | true          | true           ||
+| Purchase               | PURCHASE                | PURCHASE                                              | true          | false          ||
+| Fixed Asset            | FIXED\_ASSET            | FIXED\_ASSET                                          | true          | true           ||
+| Longterm Liability     | LONGTERM\_LIABILITY     | LONGTERM\_LIABILITY                                   | true          | true           ||
+| Equity                 | EQUITY                  | EQUITY                                                | true          | true           ||
+| Stock                  | STOCK                   | STOCK                                                 | false         | false          ||
+| Profit & Loss          | PROFIT\_LOSS            | PROFIT\_LOSS                                          | false         | false          ||
+| Loans and Liabilities  | LOANS\_AND\_LIABILITIES | LOANS\_AND\_LIABILITIES                               | true          | true           ||
+| Bank Account           | BANK\_ACCOUNT           | CURRENT\_ASSET,<br/> BANK\_ACCOUNT                    | true          | false          |Current Asset|
+| EFT Account            | EFT\_ACCOUNT            | CURRENT\_ASSET,<br/> EFT\_ACCOUNT                     | true          | false          |Current Asset|
+| Tds Receivable         | TDS\_RECEIVABLE         | CURRENT\_ASSET,<br/> TDS\_RECEIVABLE                  | true          | false          |Current Asset|
+| Sundry Debtors         | SUNDRY\_DEBTOR          | CURRENT\_ASSET,<br/> SUNDRY\_DEBTOR                   | true          | true           |Current Asset|
+| Cash                   | CASH                    | CURRENT\_ASSET,<br/> CASH                             | true          | true           |Current Asset|
+| Bank OD Account        | BANK\_OD\_ACCOUNT       | CURRENT\_LIABILITY,<br/> BANK\_OD\_ACCOUNT            | true          | false          |Current Liability|
+| Sundry Creditor        | SUNDRY\_CREDITOR        | CURRENT\_LIABILITY,<br/> SUNDRY\_CREDITOR             | true          | true           |Current Liability|
+| Branch / Division      | BRANCH\_OR\_DIVISION    | CURRENT\_LIABILITY,<br/> BRANCH\_OR\_DIVISION         | true          | false          |Current Liability|
+| Tds Payable            | TDS\_PAYABLE            | CURRENT\_LIABILITY,<br/> TDS\_PAYABLE                 | true          | false          |Current Liability|
+| Duties And Taxes       | DUTIES\_AND\_TAXES      | CURRENT\_LIABILITY,<br/> DUTIES\_AND\_TAXES           | true          | false          |Current Liability|
+| Gst                    | GST                     | CURRENT\_LIABILITY,<br/> DUTIES\_AND\_TAXES,<br/> GST | true          | false          |Duties And Taxes|
+| Emi Account            | EMI\_ACCOUNT            | CURRENT\_ASSET,<br/> EMI\_ACCOUNT                     | true          | false          |Current Asset|
+
+
+## Account Type List
+![Account Type List](./acc-type-list.png)
+![Account Type List](./acc-type-list-filtered.png)
+
+* Press `Down Arrow/Up` & select `Tea Expense` then Enter, or Click on `Tea Expense` account type.
+* it will open [Edit Account Type](#edit-account-type) Screen.
+
+## Edit Account Type
+
+![Edit Account Type](./edit-acc-type.png)
+
+
+
+
