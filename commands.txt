@@ -8,3 +8,5 @@ Git push ----- git push origin [branchName]
 
 Pull Main ---- git pull origin main
 
+delete branch --- git branch -D (branchName)
+
