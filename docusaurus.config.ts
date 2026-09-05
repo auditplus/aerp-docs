@@ -160,6 +160,36 @@ const config: Config = {
       darkTheme: prismThemes.nightOwl,
     },
   } satisfies Preset.ThemeConfig,
+
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        // ... Your options.
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+        docsRouteBasePath: "/docs",
+        blogRouteBasePath: "/blog",
+        language:"en",
+        docsDir: "docs",
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        searchResultLimits: 25,
+        searchResultContextMaxLength: 50,
+        searchBarShortcut: true,
+        searchBarShortcutHint: true,
+        searchBarShortcutKeymap: "ctrl+k",
+        searchBarPosition: "right",
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        // language: ["en", "zh"],
+        // ```
+      }),
+    ],
+  ],
 };
 
 export default config;
