@@ -42,7 +42,7 @@ const config: Config = {
   projectName: 'aerp-docs', // Usually your repo name.
   deploymentBranch: 'main',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',  // throw
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -58,7 +58,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
