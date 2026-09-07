@@ -29,11 +29,9 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  // url: 'https://www.auditplus.io',
-  url: 'https://auditplus.github.io',
+  url: 'https://www.auditplus.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  // baseUrl: '/docs/',
   baseUrl: '/docs/',
 
   // GitHub pages deployment config.
@@ -43,6 +41,7 @@ const config: Config = {
   deploymentBranch: 'main',
 
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
