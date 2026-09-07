@@ -159,10 +159,20 @@ const config: Config = {
       theme: prismThemes.duotoneLight,
       darkTheme: prismThemes.nightOwl,
     },
+    // ref: https://mermaid.js.org/config/theming.html
+    // ref: https://github.com/mermaid-js/mermaid/blob/master/packages/mermaid/src/config.type.ts
+    mermaid: {
+      theme: {light: 'default', dark: 'dark'},
+      maxTextSize: 50,
+    },
   } satisfies Preset.ThemeConfig,
 
+  markdown: {
+    mermaid: true,
+  },
   themes: [
     // ... Your other themes.
+    '@docusaurus/theme-mermaid',
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
