@@ -34,7 +34,7 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/docs/',
-  baseUrl: '/docs/',
+  baseUrl: '/aerp-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -172,6 +172,9 @@ const config: Config = {
 
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    }
   },
   themes: [
     // ... Your other themes.
