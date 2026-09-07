@@ -29,17 +29,21 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://www.auditplus.io',
+  // url: 'https://www.auditplus.io',
+  url: 'https://auditplus.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs/',
+  // baseUrl: '/docs/',
+  baseUrl: '/aerp-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'auditplus', // Usually your GitHub org/user name.
   projectName: 'aerp-docs', // Usually your repo name.
+  deploymentBranch: 'main',
 
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -163,7 +167,6 @@ const config: Config = {
     // ref: https://github.com/mermaid-js/mermaid/blob/master/packages/mermaid/src/config.type.ts
     mermaid: {
       theme: {light: 'default', dark: 'dark'},
-      maxTextSize: 50,
     },
   } satisfies Preset.ThemeConfig,
 
